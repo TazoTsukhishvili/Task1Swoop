@@ -8,8 +8,8 @@ import org.testng.annotations.BeforeTest;
 import static com.codeborne.selenide.Selenide.*;
 public class SwoopConfiguration {
     LoginSteps loginSteps = new LoginSteps();
-//    Steps.registrationSteps registrationSteps = new registrationSteps();
-//    Steps.restPageSteps restPageSteps = new restPageSteps();
+    RegistrationSteps registrationSteps = new RegistrationSteps();
+    RestPageSteps restPageSteps = new RestPageSteps();
 
     @BeforeTest
     public void openChrome(){

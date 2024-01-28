@@ -1,11 +1,14 @@
 package Steps;
 
 import Data.LoginData;
+import Data.RandomGenerator;
 import Pages.LoginPage;
 import com.codeborne.selenide.Condition;
 
-public class LoginSteps {
+import java.util.Random;
 
+public class LoginSteps {
+    RandomGenerator randomGenerator = new RandomGenerator();
     LoginData loginData = new LoginData();
     LoginPage loginPage = new LoginPage();
 
@@ -14,11 +17,11 @@ public class LoginSteps {
         return this;
     }
     public LoginSteps fillEmailInput() {
-        loginPage.emailInput.setValue(loginData.randomEmailText);
+        loginPage.emailInput.setValue(randomGenerator.randomEmail);
         return this;
     }
     public LoginSteps fillPasswordInput() {
-        loginPage.passwordInput.setValue(loginData.randomPasswordText);
+        loginPage.passwordInput.setValue(randomGenerator.randomPassword);
         return this;
     }
     public LoginSteps clickLoginInnerButton() {

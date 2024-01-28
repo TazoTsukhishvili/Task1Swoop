@@ -42,6 +42,7 @@ Click on 'დასვენება'
 Scroll down and fill 'ფასი' range with values 170-180
 Click on 'ძებნა'
 Check that price of each filtered items is in range  170-180
+
 Fourth  test:
 Go to https://www.swoop.ge/
 Click on 'კვება'
