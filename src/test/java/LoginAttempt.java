@@ -5,7 +5,7 @@ public class LoginAttempt extends SwoopConfiguration{
 
   //  LoginSteps loginSteps = new LoginSteps();
 
-    @Test (description = "login with a random creds")
+    @Test (description = "test1 - validate loginPage while using the random creds")
     public void loginTest() {
         loginSteps
                 .clickLoginButton()
