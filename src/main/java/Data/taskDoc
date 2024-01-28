@@ -1,0 +1,58 @@
+Tasks:
+
+·       Change default timeout with Selenide Configuration
+·       Use chrome browser
+
+### Project Development Requirements
+- use selenide (not selenium)
+- use Page object model, fluent interface and data pattern
+- make the third test method dependent on the second test method
+- Tests should run with this order (first, second, third), using testNG
+- do not use Thread.sleep or Selenide sleep()
+- use Allure report:
+- group tests with Epic, Features and Stories
+- provide step name, test name and description in report
+- add screenshot of allure and don’t delete allure-results folder from project
+- upload project to github
+
+
+
+First test:
+Go to https://www.swoop.ge/
+Click on ‘შესვლა’ button
+Fill 'ელ.ფოსტა' with random mail, with correct format
+Fill 'პაროლი' with random 8 symbols
+click on 'შესვლა'
+check that message has text 'მომხმარებელი ან პაროლი არასწორია'
+check that 'პაროლის აღდგენა' is clickable
+
+Second test:
+Go to https://www.swoop.ge/
+Click on ‘შესვლა’ button
+Click on ‘შექმენი’ button
+Check that 'ანგარიშის შექმნა' is visible
+Fill all info except mobile number
+Check both checkboxes
+Click on 'დადასტურება' button
+Check that 'ჩაწერე ტელეფონის ნომერი' and 'ჩაწერე SMS კოდი' messages are visible
+
+Third  test:
+Go to https://www.swoop.ge/
+Click on 'დასვენება'
+Scroll down and fill 'ფასი' range with values 170-180
+Click on 'ძებნა'
+Check that price of each filtered items is in range  170-180
+Fourth  test:
+Go to https://www.swoop.ge/
+Click on 'კვება'
+Choose ‘თბილისი’ from ‘მდებარეობა’ dropdown
+Click on delete icon (next to ‘ძებნა’) and validate that filter ‘თბილისი’ is deleted in dropdown and ‘ყველა მდებარეობა’ is visible
+Now click on first option from ‘კვება’ (see attached screenshot1 for example)
+Choose 2 vouchers and add in the basket (screenshot2)
+Go to the basket and validate that restaurant name, voucher count and price are correct (screenshot3)
+
+
+
+
+
+
