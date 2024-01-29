@@ -5,7 +5,6 @@ import Data.RandomGenerator;
 import Pages.LoginPage;
 import com.codeborne.selenide.Condition;
 
-import java.util.Random;
 
 public class LoginSteps {
     RandomGenerator randomGenerator = new RandomGenerator();

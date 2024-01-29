@@ -10,6 +10,7 @@ public class SwoopConfiguration {
     LoginSteps loginSteps = new LoginSteps();
     RegistrationSteps registrationSteps = new RegistrationSteps();
     RestPageSteps restPageSteps = new RestPageSteps();
+    FoodPageSteps foodPageSteps = new FoodPageSteps();
 
     @BeforeTest
     public void openChrome(){
