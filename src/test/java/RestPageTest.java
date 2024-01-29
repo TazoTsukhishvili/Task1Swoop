@@ -9,6 +9,7 @@ public class RestPageTest extends SwoopConfiguration{
                 .scrollDownLeftBar()
                 .setMinPrice()
                 .setMaxPrice()
-                .clickSearchLeftBar();
+                .clickSearchLeftBar()
+                .checkPriceRange();
     }
 }

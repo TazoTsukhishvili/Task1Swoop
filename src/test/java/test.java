@@ -8,6 +8,8 @@ import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.google.common.collect.Range.greaterThan;
+import io.qameta.allure.*;
+
 
 
 public class test extends SwoopConfiguration{
@@ -32,20 +34,10 @@ public class test extends SwoopConfiguration{
         int intPrice = Integer.parseInt(intPart);
 
         voucherPrice.shouldHave(text(String.valueOf(intPrice)));
-//        SelenideElement selenideElement;
-//        selenideElement = voucherPrice.shouldBe(greaterThan(String.valueOf(170)));
+        if (intPrice < 170 || intPrice > 180) {
+            throw new AssertionError("Out of range (170, 180): " + intPrice);
+        }
 
-
-        // compare values
-//
-//        if (intPrice >= 170 && intPrice <= 180) {
-//            System.out.println("Valid Integer Value: " + intPrice);
-//        } else {
-//            System.out.println("Invalid Integer Value: " + intPrice);
-//        }
-//
-//        boolean result = intPrice >= 170 && intPrice <= 180;
-//        System.out.println(result);
     }
 
 }
