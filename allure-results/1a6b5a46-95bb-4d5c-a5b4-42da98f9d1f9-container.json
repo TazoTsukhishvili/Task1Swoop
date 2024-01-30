@@ -1,0 +1,1 @@
+{"uuid":"1a6b5a46-95bb-4d5c-a5b4-42da98f9d1f9","name":"SwoopTests.openChrome","children":["3a034005-587e-4823-8107-a1f7d16e3bd4"],"description":"","befores":[{"name":"openChrome","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1706615348297,"stop":1706615356594}],"afters":[],"start":1706615348297,"stop":1706615356594}

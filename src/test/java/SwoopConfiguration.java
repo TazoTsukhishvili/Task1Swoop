@@ -1,6 +1,7 @@
 import Steps.*;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -12,17 +13,15 @@ public class SwoopConfiguration {
     RestPageSteps restPageSteps = new RestPageSteps();
     FoodPageSteps foodPageSteps = new FoodPageSteps();
 
-    @BeforeTest
+    @BeforeMethod
     public void openChrome(){
+        Configuration.timeout = 10000;
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
-    }
-    @BeforeMethod
-    public void openSwoop(){
         open("https://www.swoop.ge/");
     }
-    @AfterTest
+    @AfterMethod
     public void closeChrome(){
-        WebDriverRunner.getWebDriver().quit();
+        closeWebDriver();
     }
 }

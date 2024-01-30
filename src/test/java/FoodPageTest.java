@@ -1,7 +1,10 @@
+import Steps.FoodPageSteps;
 import org.testng.annotations.Test;
 
 public class FoodPageTest extends SwoopConfiguration{
-    @Test(description = "validate the 1st iteam's info from food")
+
+    FoodPageSteps foodPageSteps = new FoodPageSteps();
+    @Test(description = "test4 - validate the 1st iteam's info from food")
     public void foodInfo() {
         foodPageSteps
                 .clickFoodButton()

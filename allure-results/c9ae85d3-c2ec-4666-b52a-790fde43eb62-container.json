@@ -1,0 +1,1 @@
+{"uuid":"c9ae85d3-c2ec-4666-b52a-790fde43eb62","name":"SwoopTests.closeChrome","children":["47509269-52cb-4a9b-8da2-1c21f6494604"],"description":"","befores":[],"afters":[{"name":"closeChrome","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1706615379087,"stop":1706615380263}],"start":1706615379087,"stop":1706615380263}
